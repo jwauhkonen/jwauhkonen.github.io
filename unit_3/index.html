@@ -7,20 +7,19 @@
 	<body>
 		<header>
 			<h1>Jonathan Wauhkonen - Web Developer</h1>
-			<div class="social-links">
-				<div class="social-link">email logo</div>
-				<div class="social-link">linkedin logo</div>
-				<div class="social-link">github logo</div>
-			</div>
+			<nav class="social-links">
+				<a href="#" class="social-link">email logo</div>
+				<a href="#" class="social-link">linkedin logo</div>
+				<a href="#" class="social-link">github logo</div>
+			</nav>
 		</header>
 
 		<section id="intro">
 			<p>Hi, I'm Jonathan.</p>
 			<p>I'm a full-stack web developer based in Boston.</p>
 			<p>I have experience with a <a href="#technologies">variety of technologies.</a></p>
-			<p>Feel free to check out some of <a href="#projects">my projects,</a></p>
-			<p>or read about my <a href="#education-and-experience">education and experience</a></p>
-			<br>
+			<p>Feel free to check out some of <a href="#projects">my projects,</a><br>
+			or read about my <a href="#education-and-experience">education and experience</a></p>
 			<p>I also make <a href="https://kirkwindsor.bandcamp.com/">music</a> and sometimes <a href="https://bostonhassle.com/">help out</a> around Boston's music scene.</p>
 
 			<a href="mailto:jwauhkonen@gmail.com?Subject=Hi%20Jonathan">Get in touch!</a>
@@ -36,13 +35,11 @@
 
 		<section id="projects">
 			<h2>Personal Projects</h2>
-
 			<article>
 				<a href="http://www.scatterbrainlyrics.com/"><img src="images/scatterbrain-image.png" alt="Screenshot of scatterbrain website" title="Scatterbrain Screenshot" /></a>
 				<h3>Scatterbrain</h3>
 				<p>Lyric tagging app. Users can select and tag lyrics with emotional responses, which are aggregated and displayed. Backbone app consuming RESTful API built with Rails. Custom built tagging functionality. <a href= "https://github.com/jwauhkonen/scatterbrain-app">Github</a> </p>
 			</article>
-
 			<article>
 				<!-- I need a refresher on submodules - should link to asteroids/index.html -->
 				<a href="#"><img src="images/asteroids-image.png" alt="Screenshot of BASSteroids game" title="BASSteroids Screenshot" /></a>
@@ -62,7 +59,7 @@
 			<h2>Education and Experience</h2>
 			<!-- Obviously add some more of these -->
 
-			<article>
+			<section>
 				<div class="experience-details">
 					<h3>Luvo: Boston, MA — June 2015 - Feb 2016</h3>
 					<h4>Python/Django, Angular.js, Git, Scrum</h4>
@@ -71,28 +68,21 @@
 					<p>Full-stack developer for education-oriented e-commerce site.
 Closely involved in buildout of major features including online tutoring platform and integration of new payment system.</p>
 				</div>
-			</article>
+			</section>
 		</section>
 
 		<!-- I just copy/pasted this from the internet, I'll do a better job later -->
 		<section id="contact">
 			<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-				<div class="row">
-					<label for="name">Your name:</label><br />
-					<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-				</div>
-				<div class="row">
-					<label for="email">Your email:</label><br />
-					<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-				</div>
-				<div class="row">
-					<label for="message">Your message:</label><br />
-					<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-				</div>
+				<label for="name">Your name:</label><br />
+				<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+				<label for="email">Your email:</label><br />
+				<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+				<label for="message">Your message:</label><br />
+				<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
 				<input id="submit_button" type="submit" value="Send email" />
 			</form>
 		</section>
-
 		<footer>
 			<ul>
 				<li>© 2017 Jonathan Wauhkonen</li>
@@ -102,6 +92,5 @@ Closely involved in buildout of major features including online tutoring platfor
 				<li><a href="#">Back to Top</a></li>
 			</ul>
 		</footer>
-
 	</body>
 </html>
