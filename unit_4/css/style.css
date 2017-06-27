@@ -1,0 +1,17 @@
+#personal-portrait {
+	width: 300px;
+}
+
+#contact-form * {
+	display: block;
+}
+
+footer ul {
+	width: 510px;
+	margin: auto;
+	padding: 0px;
+}
+
+footer li {
+	display: inline;
+}
