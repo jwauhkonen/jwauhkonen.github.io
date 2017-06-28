@@ -1,17 +1,49 @@
-#personal-portrait {
-	width: 300px;
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+
+body {
+	background-color: #bffcdf;
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
 }
 
-#contact-form * {
-	display: block;
+h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	width: 30em;
+	line-height: 1.4em;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #f27a04;
+}
+
+a:hover {
+	color: #ba1500;
 }
 
 footer ul {
-	width: 510px;
+	width: 540px;
 	margin: auto;
 	padding: 0px;
 }
 
 footer li {
 	display: inline;
+}
+
+img {
+	width: 30em;
+}
+
+#personal-portrait {
+	width: 300px;
+}
+
+#contact-form * {
+	display: block;
 }
