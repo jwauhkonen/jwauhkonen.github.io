@@ -1,21 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
-
+* {margin:0;padding:0;box-sizing:border-box;}
 body {
-	background-color: #bffcdf;
 	color: #222222;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 }
-
+section {
+	padding:4em 0;
+}
 h1, h2, h3 {
 	font-family: 'Open Sans', sans-serif;
+	margin-bottom: .5em;
 }
-
-p {
-	width: 30em;
-	line-height: 1.4em;
-}
-
 a {
 	text-decoration: none;
 	font-weight: bold;
@@ -23,17 +19,22 @@ a {
 }
 
 a:hover {
-	color: #ba1500;
+	color: rgba(186, 21, 0, 1);
 }
-
+a:visited {
+	color: rgba(186, 21, 0, 0.76);
+}
+footer {
+    text-align: center;
+    background: #bffcdf;
+}
 footer ul {
-	width: 540px;
-	margin: auto;
-	padding: 0px;
+	display: inline-block;
 }
 
 footer li {
-	display: inline;
+	display: inline-block;
+	padding: 1em;
 }
 
 img {
