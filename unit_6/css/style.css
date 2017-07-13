@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+
+* {margin:0;padding:0;box-sizing:border-box;}
+
+body {
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	background: #bffcdf
+}
+
+header {
+	border-bottom: 1px black solid;
+	padding: 20px;
+}
+
+nav {
+	float: right;
+	width: 50%;
+	text-align: center;
+}
+
+section {
+	clear: both;
+	padding: 20px;
+}
+
+h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: .5em;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #f27a04;
+}
+
+a:hover {
+	color: rgba(186, 21, 0, 1);
+}
+
+a:visited {
+	color: rgba(186, 21, 0, 0.76);
+}
+
+footer {
+    text-align: center;
+		padding: 10px 20px;
+}
+
+footer ul {
+	display: inline-block;
+}
+
+footer li {
+	display: inline-block;
+	padding: 1em;
+}
+
+nav ul {
+	display: inline-block;
+	width: 100%;
+}
+
+nav li {
+	display: inline-block;
+	width: 33%;
+}
+
+img {
+	width: 30em;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.logo {
+	float: left;
+	width: 50%;
+	font-size: 20px;
+}
+
+.project-description {
+	max-width: 30em;
+	line-height: 1.4em;
+}
+
+.education-or-employment-details {
+	max-width: 30em;
+	line-height: 1.4em;
+}
+
+.education-or-employment-description {
+	max-width: 30em;
+	line-height: 1.4em;
+}
+
+.left-column {
+	width: 50%;
+	float: left;
+}
+
+.right-column {
+	width: 50%;
+	float: right;
+}
+
+.personal-portrait {
+	display: block;
+	width: 80%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.project-image {
+	display: block;
+	width: 80%;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+#contact-form * {
+	display: block;
+}
+
+#intro {
+	border-bottom: 1px black solid;
+}
+
+#technologies {
+	border-bottom: 1px black solid;
+}
+
+#projects {
+	border-bottom: 1px black solid;
+}
+
+#education-and-employment {
+	border-bottom: 1px black solid;
+}
+
+#contact {
+	border-bottom: 1px black solid;
+}
+
+#intro p {
+	font-size: 18px;
+	line-height: 1.8em;
+}
