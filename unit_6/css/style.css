@@ -3,16 +3,16 @@
 * {margin:0;padding:0;box-sizing:border-box;}
 
 body {
-	color: #222222;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
-	background: #bffcdf;
+	background: #dbffff;
 	line-height: 1.4;
+	color: #290000;
 }
 
 header {
-	border-bottom: 1px black solid;
-	padding: 20px;
+	padding: 10px 20px;
+	position: relative;
 }
 
 nav {
@@ -23,61 +23,59 @@ nav {
 
 section {
 	clear: both;
-	padding: 20px 0;
+	padding: 20px 2em;
 	position: relative;
 }
 
 h1, h2, h3 {
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: .5em;
+	color: #471301;
+}
+
+h1, h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1.3em;
 }
 
 a {
 	text-decoration: none;
 	font-weight: bold;
-	color: #f27a04;
 }
+
 nav a {
 	display:inline-block;
 	padding:1em;
-}
-a:hover {
-	color: rgba(186, 21, 0, 1);
+	color: #ff6d00;
+	width: 32%;
 }
 
-a:visited {
-	color: rgba(186, 21, 0, 0.76);
+nav a:hover, footer a:hover {
+	color: #c43c00;
 }
 
 footer {
-    text-align: center;
-		padding: 10px 20px;
+  text-align: center;
+	padding: 10px 20px;
 }
 
-footer ul {
-	display: inline-block;
+footer a {
+	color: #ff6d00;
 }
 
-footer li {
+footer * {
 	display: inline-block;
-	padding: 1em;
-}
-
-nav ul {
-	display: inline-block;
-	width: 100%;
-}
-
-nav li {
-	display: inline-block;
-	width: 33%;
+	padding: 5px 1em;
 }
 
 img {
 	width: 30em;
 }
 
-.clearfix:after, .example:after {
+.clearfix:after, .project:after {
 	visibility: hidden;
 	display: block;
 	font-size: 0;
@@ -86,20 +84,33 @@ img {
 	height: 0;
 }
 
+.wrapper {
+	width: 1200px;
+	margin: auto;
+}
+
 .logo {
 	float: left;
+	padding: 0 1em;
 	width: 50%;
 	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .project-description {
 	max-width: 30em;
-	line-height: 1.4em;
+	font-size: 1.1em;
+	line-height: 1.6em;
 }
 
 .education-or-employment-details {
+	font-weight: bold;
 	max-width: 30em;
-	line-height: 1.4em;
+	line-height: 1.8em;
+	margin: 0 2%;
 }
 
 .education-or-employment-description {
@@ -111,7 +122,6 @@ img {
 	width: 50%;
 	position: absolute;
 	top: 50%;
-	padding: 0 4em;
 	transform: translateY(-50%);
 }
 
@@ -132,29 +142,64 @@ img {
 }
 
 #intro {
-	border-bottom: 1px black solid;
-	width: 1200px;
+	background: #75ccb9;
 	margin: auto;
 }
 
 #technologies {
-	border-bottom: 1px black solid;
-	width: 600px;
-	margin: auto;
+	text-align: center;
+	background: #a7ffeb;
+	padding: 20px 300px;
 }
 
 #projects {
-	border-bottom: 1px black solid;
-	width: 1200px;
-	margin: auto;
+	background: #75ccb9;
 }
 
 #education-and-employment {
-	border-bottom: 1px black solid;
+	background: #a7ffeb;
 }
 
 #contact {
-	border-bottom: 1px black solid;
+	background: #75ccb9;
+	padding: 20px 300px;
+}
+
+.project {
+    position: relative;
+}
+
+.alt-column {
+    width: 50%;
+    float: left;
+}
+
+.project:nth-of-type(even) .alt-column {
+    float:right;
+}
+
+div.alt-column {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    padding: 0 4em;
+}
+
+img.alt-column {
+	width: 45%;
+	margin: 0 2%;
+}
+
+.project:nth-of-type(even) div.alt-column {
+    position:absolute;
+    left:0;
+}
+
+#intro .intro-cta {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: 10px;
 }
 
 #intro p {
@@ -162,27 +207,39 @@ img {
 	line-height: 1.8em;
 }
 
-.example {
-    position: relative;
+#intro a, #projects a {
+	color: #BF4716;
 }
 
-.column2 {
-    width: 50%;
-    float: left;
+#intro a:hover, #projects a:hover {
+	color: #ff6d00;
 }
 
-.example:nth-of-type(even) .column2 {
-    float:right;
+#contact h2, #contact label {
+	text-align: center;
 }
 
-div.column2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
-    padding: 0 4em;
+#contact label {
+	font-size: 1.2em;
 }
-.example:nth-of-type(even) div.column2 {
-    position:absolute;
-    left:0;
+
+#contact input, #contact textarea {
+	margin: 0px auto 10px;
+	padding: 2px;
+	font-size: 1em;
+	border: none;
+	resize: none;
+}
+
+#contact input#submit-button {
+	margin-top: 10px;
+	background: #BF4716;
+	padding: 7px;
+	border-radius: 5px;
+	color: white;
+}
+
+#contact input#submit-button:hover {
+	cursor: pointer;
+	background: #ff6d00;
 }
