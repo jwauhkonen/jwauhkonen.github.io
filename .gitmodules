@@ -1,6 +1,1 @@
-[submodule "minesweeper"]
-	path = minesweeper
-	url = https://github.com/jwauhkonen/minesweeper
-[submodule "asteroids"]
-	path = asteroids
-	url = https://github.com/jwauhkonen/asteroids.git
+
