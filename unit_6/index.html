@@ -8,21 +8,23 @@
 		<title>Jonathan Wauhkonen - Web Developer</title>
 	</head>
 	<body>
-		<div class="wrapper">
-			<header class="clearfix">
+		<header class="clearfix">
+			<div class="container">
 				<p class="logo">Jonathan Wauhkonen - Web Developer</p>
 				<nav>
 					<a href="#"><i class="fa fa-envelope fa-2x"></i></a>
 					<a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
 					<a href="#"><i class="fa fa-github-square fa-2x"></i></a>
 				</nav>
-			</header>
-			<section id="intro" class="clearfix">
+			</div>
+		</header>
+		<section id="intro" class="clearfix">
+			<div class="container">
 				<div class="left-column">
 					<h1>Hi, I'm Jonathan.<br><span>I'm a full-stack web developer based in Boston.<span></h1>
-					<p>I have experience with a <a href="#technologies">variety of technologies.</a></p>
-					<p>Feel free to check out some of <a href="#projects">my projects,</a><br>
-					read about my <a href="#education-and-employment">education and experience,</a><br>
+					<p>I have experience with a <a href="#technologies">variety of technologies</a>.</p>
+					<p>Feel free to check out some of <a href="#projects">my projects</a>,<br>
+					read about my <a href="#education-and-employment">education and experience</a>,<br>
 					or <a href="#">download my resume</a>.</p>
 					<p>I also make <a href="https://kirkwindsor.bandcamp.com/">music</a> and sometimes <a href="https://bostonhassle.com/">help out</a> around Boston's music scene.</p>
 					<p class="intro-cta">Get in touch! <a href="mailto:jwauhkonen@gmail.com">jwauhkonen@gmail.com</a></p>
@@ -31,13 +33,17 @@
 				<div class="right-column">
 					<img class="personal-portrait" alt="A picture of myself" title="Personal Portrait" src="images/jonathan.png">
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section id="technologies">
+		<section id="technologies">
+			<div class="container">
 				<h2>Top Technologies</h2>
 				<p>Ruby, Javascript, Python, HTML5, CSS3, JQuery, Rails, Django, Angular, Git, SQL, React, Backbone</p>
-			</section>
-			<section id="projects" class="clearfix">
+			</div>
+		</section>
+		<section id="projects" class="clearfix">
+			<div class="container">
 				<h2>Personal Projects</h2>
 				<section class="project">
 					<div class="alt-column">
@@ -70,9 +76,11 @@
 					</div>
 					<a href="#"><img class="alt-column" src="images/hangman-image.png" alt="Screenshot of hangman game" title="Hangman Screenshot"/></a>
 				</section>
-			</section>
+			</div>
+		</section>
 
-			<section id="education-and-employment" class="clearfix">
+		<section id="education-and-employment" class="clearfix">
+			<div class="container">
 				<h2>Education...</h2>
 				<!-- Obviously add some more of these -->
 
@@ -117,10 +125,12 @@
 						<p>Back-end developer for insurance aggregation site. Worked on consumer facing site and insurance partner integration service, and helped build out the backend for mobile drive tracking app.</p>
 					</div>
 				</section>
-			</section>
+			</div>
+		</section>
 
-			<!-- I just copy/pasted this from the internet, I'll do a better job later -->
-			<section id="contact">
+		<!-- I just copy/pasted this from the internet, I'll do a better job later -->
+		<section id="contact">
+			<div class="container">
 				<h2>Get in Touch</h2>
 				<form id="contact-form" action="#" method="POST" enctype="multipart/form-data">
 					<label for="name">Your name:</label>
@@ -131,14 +141,18 @@
 					<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea>
 					<input id="submit-button" type="submit" value="Send Email" />
 				</form>
-			</section>
-			<footer>
-					<span>© 2017 Jonathan Wauhkonen<span>
-					<a href="#"><i class="fa fa-envelope fa-2x"></i></a>
-					<a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-					<a href="#"><i class="fa fa-github-square fa-2x"></i></a>
-					<a href="#">Back to Top</a>
-			</footer>
-		</body>
-	</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<span>© 2017 Jonathan Wauhkonen</span>
+				<a href="#"><i class="fa fa-envelope fa-2x"></i></a>
+				<a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+				<a href="#"><i class="fa fa-github-square fa-2x"></i></a>
+			</div>
+		</footer>
+		<div class="to-top-button">
+			<a href="#"><i class="fa fa-chevron-up fa-2x"></i></a>
+		</div>
+	</body>
 </html>

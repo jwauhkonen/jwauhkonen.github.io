@@ -50,7 +50,7 @@ nav a {
 	display:inline-block;
 	padding:1em;
 	color: #ff6d00;
-	width: 32%;
+	width: 20%;
 }
 
 nav a:hover, footer a:hover {
@@ -66,9 +66,14 @@ footer a {
 	color: #ff6d00;
 }
 
+footer span {
+	position: relative;
+	bottom: 5px;
+}
+
 footer * {
 	display: inline-block;
-	padding: 5px 1em;
+	padding: 5px .8em;
 }
 
 img {
@@ -84,7 +89,7 @@ img {
 	height: 0;
 }
 
-.wrapper {
+.container {
 	width: 1200px;
 	margin: auto;
 }
@@ -149,41 +154,62 @@ img {
 #technologies {
 	text-align: center;
 	background: #a7ffeb;
-	padding: 20px 300px;
+	padding: 40px;
 }
 
 #projects {
 	background: #75ccb9;
+	padding: 40px 2em;
 }
 
 #education-and-employment {
 	background: #a7ffeb;
+	padding: 40px 2em;
 }
 
 #contact {
 	background: #75ccb9;
-	padding: 20px 300px;
+	padding: 40px;
+}
+
+.to-top-button {
+	height: 70px;
+	width: 90px;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	right: 4em;
+	background-color: #290000;
+	text-align: center;
+}
+
+.fa-chevron-up {
+	color: #fff;
+	padding-top: 20px;
+	animation-name: wiggle;
+	animation-duration: 1.2s;
+	animation-iteration-count: infinite;
 }
 
 .project {
-    position: relative;
+  position: relative;
 }
 
 .alt-column {
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
 }
 
 .project:nth-of-type(even) .alt-column {
-    float:right;
+  float: right;
 }
 
 div.alt-column {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
-    padding: 0 4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  padding: 0 4em;
 }
 
 img.alt-column {
@@ -192,8 +218,8 @@ img.alt-column {
 }
 
 .project:nth-of-type(even) div.alt-column {
-    position:absolute;
-    left:0;
+  position:absolute;
+  left:0;
 }
 
 #intro .intro-cta {
@@ -215,6 +241,14 @@ img.alt-column {
 	color: #ff6d00;
 }
 
+#education-and-employment h2 {
+	margin-bottom: 0;
+}
+
+#education-and-employment section + h2 {
+	padding-top: 40px;
+}
+
 #contact h2, #contact label {
 	text-align: center;
 }
@@ -231,15 +265,38 @@ img.alt-column {
 	resize: none;
 }
 
+#contact input:focus, #contact textarea:focus {
+	outline: #dc5721 auto 4px;
+}
+
 #contact input#submit-button {
-	margin-top: 10px;
-	background: #BF4716;
-	padding: 7px;
-	border-radius: 5px;
+	margin: 10px auto 10px;
+	background: #dc5721;
+	padding: 10px;
+	border-radius: 4px;
 	color: white;
+
+	box-shadow: 0 3px 5px #555;
 }
 
 #contact input#submit-button:hover {
 	cursor: pointer;
+	margin: 12px auto 8px;
 	background: #ff6d00;
+
+	box-shadow: 0 0 1px #555;
+}
+
+@keyframes wiggle {
+	0% {
+		padding: 15px 29px 23px;
+	}
+
+	50% {
+		padding: 20px 29px 18px;
+	}
+
+	100% {
+		padding: 15px 29px 23px;
+	}
 }
