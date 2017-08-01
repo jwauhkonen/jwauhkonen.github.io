@@ -357,6 +357,10 @@ img {
 	body {
 		font-size: 13px;
 	}
+
+	nav a {
+		text-align: right;
+	}
 }
 
 @media screen and (max-width: 560px) {
