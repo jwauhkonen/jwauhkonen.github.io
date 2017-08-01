@@ -358,8 +358,8 @@ img {
 		font-size: 13px;
 	}
 
-	nav a {
-		text-align: right;
+	nav {
+		padding-left: 20px;
 	}
 }
 
@@ -375,6 +375,7 @@ img {
 	nav {
 		width: 100%;
 		float: none;
+		padding-left: 0;
 	}
 
 	nav a {
