@@ -149,7 +149,7 @@ img {
 #intro {
 	background: #75ccb9;
 	margin: auto;
-	padding: 60px 2.5%;
+	padding: 100px 2.5%;
 }
 
 #technologies {
@@ -379,6 +379,10 @@ img {
 
 	footer span {
 		width: 100%;
+	}
+
+	footer a {
+		padding: 5px .5em;
 	}
 
 	#intro .left-column {
