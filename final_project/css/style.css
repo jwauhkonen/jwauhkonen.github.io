@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+
+* {margin:0;padding:0;box-sizing:border-box;}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	background: #dbffff;
+	line-height: 1.4;
+	color: #290000;
+}
+
+header {
+	padding: 10px 20px;
+	position: relative;
+}
+
+nav {
+	float: right;
+	width: 50%;
+	text-align: center;
+}
+
+section {
+	clear: both;
+	padding: 20px 2em;
+	position: relative;
+}
+
+h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: .5em;
+	color: #471301;
+}
+
+h1, h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a {
+	display:inline-block;
+	padding:1em;
+	color: #ff6d00;
+	width: 20%;
+}
+
+nav a:hover, footer a:hover {
+	color: #c43c00;
+}
+
+footer {
+  text-align: center;
+	padding: 10px 20px;
+}
+
+footer a {
+	color: #ff6d00;
+}
+
+footer span {
+	position: relative;
+	bottom: 5px;
+}
+
+footer * {
+	display: inline-block;
+	padding: 5px .8em;
+}
+
+img {
+	width: 100%;
+}
+
+.clearfix:after, .project:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.logo {
+	float: left;
+	padding: 0 1%;
+	width: 60%;
+	font-size: 1.3em;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.project-description {
+	max-width: 30em;
+	font-size: 1.1em;
+	line-height: 1.6em;
+}
+
+.education-or-employment-details {
+	font-weight: bold;
+	max-width: 30em;
+	line-height: 1.8em;
+	padding: 0 4% 0 2%;
+}
+
+.education-or-employment-description {
+	max-width: 30em;
+	line-height: 1.4em;
+	padding: 0 2% 0 4%;
+}
+
+.left-column {
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.right-column {
+	width: 50%;
+	float: right;
+}
+
+#contact-form * {
+	display: block;
+}
+
+#intro {
+	background: #75ccb9;
+	margin: auto;
+	padding: 100px 2.5%;
+}
+
+#technologies {
+	text-align: center;
+	background: #a7ffeb;
+	padding: 60px 2.5%;
+}
+
+#projects {
+	background: #75ccb9;
+	padding: 60px 2.5%;
+}
+
+#education-and-employment {
+	background: #a7ffeb;
+	padding: 60px 2.5%;
+}
+
+#contact {
+	background: #75ccb9;
+	padding: 60px 2.5%;
+}
+
+.to-top-button {
+	height: 4em;
+	width: 5em;
+	display: block;
+	position: fixed;
+	bottom: .5em;
+	right: 5%;
+	background-color: #290000;
+	text-align: center;
+}
+
+.fa-chevron-up {
+	color: #fff;
+	padding-top: 20px;
+	animation-name: wiggle;
+	animation-duration: 1.2s;
+	animation-iteration-count: infinite;
+}
+
+.project {
+  position: relative;
+}
+
+.alt-column {
+  width: 50%;
+  float: left;
+}
+
+.project:nth-of-type(even) .alt-column {
+  float: right;
+}
+
+.project-description-container.alt-column {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  padding: 0 6%;
+}
+
+.project-image-container.alt-column {
+	width: 45%;
+	margin: 0 2%;
+	position: relative;
+	line-height: 0;
+}
+
+.project:nth-of-type(even) .project-description-container.alt-column {
+  position:absolute;
+  left:0;
+}
+
+.project-overlay {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .6);
+	opacity: 0;
+	transition: .5s ease;
+}
+
+.project-image-container:hover .project-overlay {
+	opacity: 1;
+}
+
+.project-cta {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+}
+
+.link-icon-box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 3.125em;
+	width: 3.125em;
+	background: #290000;
+	opacity: .8;
+}
+
+.fa-external-link {
+	color: white;
+	padding: 10px;
+}
+
+#intro .intro-cta {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+
+#intro .left-column {
+	padding-right: 3%;
+}
+
+#intro p {
+	font-size: 1.1em;
+	line-height: 1.8em;
+}
+
+#intro a, #projects a {
+	color: #BF4716;
+}
+
+#intro a:hover, #projects a:hover {
+	color: #ff6d00;
+}
+
+#technologies p {
+	font-size: 1.1em;
+}
+
+#education-and-employment h2 {
+	margin-bottom: 0;
+}
+
+#education-and-employment section + h2 {
+	padding-top: 40px;
+}
+
+#contact h2, #contact label {
+	text-align: center;
+}
+
+#contact label {
+	font-size: 1.2em;
+}
+
+#contact input, #contact textarea {
+	margin: 0px auto 10px;
+	padding: 2px;
+	font-size: 1em;
+	border: none;
+	resize: none;
+}
+
+#contact input:focus, #contact textarea:focus {
+	outline: #dc5721 auto 4px;
+}
+
+#contact input#submit-button {
+	margin: 10px auto 10px;
+	background: #dc5721;
+	padding: 10px;
+	border-radius: 4px;
+	color: white;
+
+	box-shadow: 0 3px 5px #555;
+}
+
+#contact input#submit-button:hover {
+	cursor: pointer;
+	margin: 12px auto 8px;
+	background: #ff6d00;
+
+	box-shadow: 0 0 1px #555;
+}
+
+@keyframes wiggle {
+	0% {
+		padding: 15% 30% 35%;
+	}
+
+	50% {
+		padding: 22% 30% 28%;
+	}
+
+	100% {
+		padding: 15% 30% 35%;
+	}
+}
+
+@media screen and (max-width: 1055px) {
+	.project-cta {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	/*.project-cta {
+		font-size: 1.5em;
+	}*/
+}
+
+@media screen and (max-width: 700px) {
+/*	body {
+		font-size: 13px;
+	}*/
+
+	/*nav {
+		padding-left: 20px;
+	}*/
+}
+
+@media screen and (max-width: 860px) {
+	.logo {
+		width: 100%;
+		float: none;
+		text-align: center;
+		position: static;
+		transform: translateY(0);
+	}
+
+	nav {
+		width: 100%;
+		float: none;
+	}
+
+	footer span {
+		width: 100%;
+	}
+
+	footer a {
+		padding: 5px .5em;
+	}
+
+	#intro .left-column {
+		width: 100%;
+		position: static;
+		transform: translateY(0);
+		text-align: center;
+	}
+
+	#intro .right-column {
+		width: 80%;
+		margin: 10px 10%;
+	}
+
+	#projects {
+		text-align: center;
+	}
+
+	#education-and-employment {
+		text-align: center;
+	}
+
+	.project-description-container.alt-column {
+	  position: static;
+	  width: 100%;
+	  transform: translateY(0);
+	  padding: 15px 0;
+	}
+
+	.project-description {
+		margin: auto;
+	}
+
+	.project:nth-of-type(even) .project-description-container.alt-column {
+	  position: static;
+	}
+
+	.project-image-container.alt-column {
+		margin: 0 20%;
+		width: 60%;
+	}
+
+	.project-cta {
+		font-size: 2em;
+	}
+
+	.education-or-employment-details {
+		width: 100%;
+		float: none;
+	}
+
+	#education-and-employment .left-column {
+		width: 100%;
+		position: static;
+		transform: translateY(0);
+		padding-bottom: 10px;
+		margin: auto;
+	}
+
+	#education-and-employment .right-column {
+		width: 100%;
+		float: none;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.project-cta {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 515px) {
+	#intro {
+		padding: 60px 0;
+	}
+
+	#intro .right-column {
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	section.project {
+		padding: 20px 0;
+	}
+
+	.project-image-container.alt-column {
+		margin: 0 5%;
+		width: 90%;
+	}
+
+	#education-and-employment section {
+		padding: 20px 0;
+	}
+
+	footer a {
+		padding: 5px 0;
+	}
+
+	footer i {
+		padding: 5px 15px;
+	}
+
+	.to-top-button {
+		width: 4.5em;
+		right: 2%;
+	}
+}
