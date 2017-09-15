@@ -163,6 +163,7 @@ img {
 }
 
 #contact {
+	display: none;
 	background: #75ccb9;
 	padding: 60px 2.5%;
 }
