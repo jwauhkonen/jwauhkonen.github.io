@@ -168,10 +168,10 @@ img {
 	padding: 60px 2.5%;
 }
 
-.to-top-button {
+#to-top-button {
 	height: 4em;
 	width: 5em;
-	display: block;
+	display: none;
 	position: fixed;
 	bottom: .5em;
 	right: 5%;
@@ -497,7 +497,7 @@ img {
 		padding: 5px 15px;
 	}
 
-	.to-top-button {
+	#to-top-button {
 		width: 4.5em;
 		right: 2%;
 	}
