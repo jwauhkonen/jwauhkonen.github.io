@@ -259,6 +259,12 @@ img {
 	padding: 10px;
 }
 
+.this-site-github-link {
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 50px;
+}
+
 #intro .intro-cta {
 	font-weight: bold;
 	font-size: 1.2em;
