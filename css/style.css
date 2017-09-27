@@ -5,7 +5,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
-	background: #dbffff;
+	background-image: url('../images/white.jpg');
 	line-height: 1.4;
 	color: #290000;
 }
@@ -78,6 +78,7 @@ footer * {
 
 img {
 	width: 100%;
+	box-shadow: 0 0 2px 0 #290000;
 }
 
 .clearfix:after, .project:after {
@@ -141,30 +142,31 @@ img {
 }
 
 #intro {
-	background: #75ccb9;
+	background-image: url('../images/light-green.jpg');
 	margin: auto;
 	padding: 100px 2.5%;
 }
 
 #technologies {
 	text-align: center;
-	background: #a7ffeb;
+	background-image: url('../images/light-blue.jpg');
 	padding: 60px 2.5%;
 }
 
 #projects {
-	background: #75ccb9;
+	background-image: url('../images/light-green.jpg');
 	padding: 60px 2.5%;
 }
 
 #education-and-employment {
-	background: #a7ffeb;
+	background-image: url('../images/light-blue.jpg');
+	padding: 60px 2.5%;
 	padding: 60px 2.5%;
 }
 
 #contact {
 	display: none;
-	background: #75ccb9;
+	background-image: url('../images/light-green.jpg');
 	padding: 60px 2.5%;
 }
 
